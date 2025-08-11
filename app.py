@@ -1,6 +1,12 @@
 import streamlit as st
 import qrcode
 
+# Configure Streamlit page settings
+st.set_page_config(
+    page_title="QR code",
+    layout="wide",  # Page layout option
+)
+
 st.sidebar.title('QR code 생성하기')
 
 st.markdown('왼쪽에서 입력창에 공백 포함 1000자 이내의 글을 입력하고 **QR code 생성** 버튼을 누르면 QR code가 생성되고 이미지를 다운로드할 수 있습니다.')
